@@ -1,0 +1,35 @@
+{
+    "name": "lmntry",
+    "version": "1.0.0",
+    "description": "Front-end \"framework\"? Let's call it a philosophy.",
+    "scripts": {
+        "build": "npm run clean && npm run copy-files && npm run browserify",
+        "browserify": "browserify src/index.ts -p [ tsify ] > dist/bundle.js",
+        "clean": "rm -rf dist",
+        "copy-assets": "mkdir -p dist && cp -r src/assets dist/assets",
+        "copy-html": "mkdir -p dist && cp src/index.html dist/index.html",
+        "copy-styles": "mkdir -p dist && cp src/index.css dist/index.css && cp -r src/styles dist/styles",
+        "copy-files": "npm run copy-assets && npm run copy-styles && npm run copy-html",
+        "lint": "tslint -p .",
+        "watch-ts": "npm run clean && npm run copy-files && npm run watchify",
+        "watchify": "watchify src/index.ts -p [ tsify ] -o dist/bundle.js",
+        "test": "echo 'No tests yet!'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rdhelms/lmntry.git"
+    },
+    "author": "Robert Helms <robert.helms1@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rdhelms/lmntry/issues"
+    },
+    "homepage": "https://github.com/rdhelms/lmntry#readme",
+    "devDependencies": {
+        "browserify": "^16.2.3",
+        "tsify": "^4.0.1",
+        "tslint": "^5.12.1",
+        "typescript": "^3.2.4",
+        "watchify": "^3.11.0"
+    }
+}
