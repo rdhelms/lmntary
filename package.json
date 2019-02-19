@@ -1,14 +1,13 @@
 {
     "name": "lmntry",
     "version": "1.0.0",
-    "description": "Front-end \"framework\"? Let's call it a philosophy.",
+    "description": "Front-end \"framework\"? Let's call it a library...with some opinions.",
     "main": "dist/server/main.js",
     "scripts": {
-        "build": "gulp",
-        "watch": "gulp watch",
+        "build": "webpack --mode=development",
         "lint": "tslint -p .",
-        "start": "node dist/server/main.js",
-        "test": "echo 'No tests yet!'"
+        "test": "echo 'No tests yet!'",
+        "start": "webpack-dev-server --mode=development --open"
     },
     "repository": {
         "type": "git",
@@ -22,17 +21,16 @@
     "homepage": "https://github.com/rdhelms/lmntry#readme",
     "devDependencies": {
         "@types/express": "^4.16.0",
-        "browserify": "^16.2.3",
-        "del": "^3.0.0",
-        "gulp": "^4.0.0",
-        "gulp-typescript": "^5.0.0",
-        "gulp-util": "^3.0.8",
-        "gulp-watch": "^5.0.1",
-        "tsify": "^4.0.1",
+        "clean-webpack-plugin": "^1.0.1",
+        "css-loader": "^2.1.0",
+        "html-webpack-plugin": "^3.2.0",
+        "style-loader": "^0.23.1",
+        "ts-loader": "^5.3.3",
         "tslint": "^5.12.1",
         "typescript": "^3.2.4",
-        "vinyl-source-stream": "^2.0.0",
-        "watchify": "^3.11.0"
+        "webpack": "^4.29.5",
+        "webpack-cli": "^3.2.3",
+        "webpack-dev-server": "^3.1.14"
     },
     "dependencies": {
         "express": "^4.16.4"

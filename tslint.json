@@ -42,6 +42,7 @@
         "interface-name": [true, "always-prefix"],
         "jsdoc-format": true,
         "quotemark": [true, "single", "avoid-escape"],
-        "semicolon": [true, "always", "ignore-bound-class-methods"]
+        "semicolon": [true, "always", "ignore-bound-class-methods"],
+        "trailing-comma": [true, {"multiline": "always", "singline": "never"}]
     }
 }
