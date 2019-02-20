@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/rdhelms/lmntry.git"
+        "url": "git+https://github.com/rdhelms/lmntary.git"
     },
     "author": "Robert Helms <robert.helms1@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/rdhelms/lmntry/issues"
+        "url": "https://github.com/rdhelms/lmntary/issues"
     },
-    "homepage": "https://github.com/rdhelms/lmntry#readme",
+    "homepage": "https://github.com/rdhelms/lmntary#readme",
     "devDependencies": {
         "clean-webpack-plugin": "^1.0.1",
         "css-loader": "^2.1.0",
