@@ -1,0 +1,11 @@
+.card {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid slategray;
+    border-radius: 10px;
+}
+
+.card__header {
+    background-color: steelblue;
+    color: white;
+}

@@ -1,13 +1,18 @@
 import './index.css';
+import './elements/main/main';
+import { Elem } from './lib/Elem';
 
-const main = document.createElement('div');
-main.textContent = (new Date()).toTimeString();
-const root = document.querySelector('#root');
-if (root) {
-    root.innerHTML = '';
-    root.appendChild(main);
+class Root extends Elem {
+    constructor() {
+        super();
+
+        this.addMain();
+    }
+
+    addMain() {
+        const main = document.createElement('app-main');
+        this.appendChild(main);
+    }
 }
 
-setInterval(() => {
-    main.textContent = (new Date()).toTimeString();
-}, 1000);
+window.customElements.define('app-root', Root);

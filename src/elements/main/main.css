@@ -1,0 +1,12 @@
+.main__header {
+    padding: 1rem;
+    background-color: steelblue;
+    color: white;
+}
+
+.main__content {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid slategray;
+    border-radius: 10px;
+}
